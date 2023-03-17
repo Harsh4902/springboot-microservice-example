@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: DEPARTMENT-SERVICE
+  datasource:
+    url: jdbc:mysql://localhost:3306/department_db
+    username: root
+    password: Harsh@4902
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+eureka:
+  instance:
+    client:
+      serverUrl:
+        defualtZone: http://localhost:8761/eureka/
+
+
